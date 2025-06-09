@@ -1,0 +1,372 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  .data-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  .data-grid th,
+  .data-grid td {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+  .data-grid th {
+    background: #f7f7fa;
+  }
+  nav button.active {
+    font-weight: bold;
+    border-bottom: 3px solid #7702FF;
+    color: #7702FF;
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+</style>
+
+<main class="main">
+  <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+    <nav
+      style="display: flex; gap: 1rem; border-bottom: 2px solid #eee; margin-bottom: 1rem;"
+    >
+      <button
+        *ngFor="let tab of tabs; let i = index"
+        (click)="activeTab = i"
+        [ngClass]="{ active: activeTab === i }"
+        style="background: none; border: none; padding: 1rem; font-size: 1.1rem; cursor: pointer; border-bottom: 3px solid transparent; outline: none;"
+        [style.borderBottomColor]="activeTab === i ? '#7702FF' : 'transparent'"
+      >
+        {{ tab.label }}
+      </button>
+    </nav>
+    <section *ngIf="activeTab === 0">
+      <h2>Consultas</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <div>
+          <h3>Última Cotação do Ativo</h3>
+          <input
+            [(ngModel)]="consulta.ativo"
+            placeholder="Código do Ativo"
+            style="margin-right: 0.5rem;"
+          />
+          <button (click)="consultarUltimaCotacao()">Consultar</button>
+          <div *ngIf="consulta.resultadoUltimaCotacao">
+            <pre>{{ consulta.resultadoUltimaCotacao | json }}</pre>
+          </div>
+        </div>
+        <div>
+          <h3>Preço Médio por Ativo para Usuário</h3>
+          <input
+            [(ngModel)]="consulta.usuario"
+            placeholder="Usuário"
+            style="margin-right: 0.5rem;"
+          />
+          <input
+            [(ngModel)]="consulta.ativo"
+            placeholder="Código do Ativo"
+            style="margin-right: 0.5rem;"
+          />
+          <button (click)="consultarPrecoMedio()">Consultar</button>
+          <div *ngIf="consulta.resultadoPrecoMedio">
+            <pre>{{ consulta.resultadoPrecoMedio | json }}</pre>
+          </div>
+        </div>
+        <div>
+          <h3>Posição de um Cliente</h3>
+          <input
+            [(ngModel)]="consulta.cliente"
+            placeholder="Cliente"
+            style="margin-right: 0.5rem;"
+          />
+          <button (click)="consultarPosicao()">Consultar</button>
+          <div *ngIf="consulta.resultadoPosicao">
+            <pre>{{ consulta.resultadoPosicao | json }}</pre>
+          </div>
+        </div>
+        <div>
+          <h3>Financeiro Corretora</h3>
+          <button (click)="consultarFinanceiroCorretora()">Consultar</button>
+          <div *ngIf="consulta.resultadoFinanceiroCorretora">
+            <pre>{{ consulta.resultadoFinanceiroCorretora | json }}</pre>
+          </div>
+        </div>
+        <div>
+          <h3>Top 10 Clientes</h3>
+          <button (click)="consultarTop10()">Consultar</button>
+          <div *ngIf="consulta.resultadoTop10Posicoes.length">
+            <h4>Top 10 por Posição</h4>
+            <pre>{{ consulta.resultadoTop10Posicoes | json }}</pre>
+          </div>
+          <div *ngIf="consulta.resultadoTop10Corretagem.length">
+            <h4>Top 10 por Corretagem</h4>
+            <pre>{{ consulta.resultadoTop10Corretagem | json }}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section *ngIf="activeTab === 1">
+      <h2>Ativos</h2>
+      <table *ngIf="ativos.length > 0" class="data-grid">
+        <thead>
+          <tr>
+            <th *ngFor="let col of getColumns(ativos)">{{ col }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of ativos">
+            <td *ngFor="let col of getColumns(ativos)">{{ row[col] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="ativos.length === 0">Nenhum dado encontrado.</div>
+    </section>
+    <section *ngIf="activeTab === 2">
+      <h2>Cotações</h2>
+      <table *ngIf="cotacoes.length > 0" class="data-grid">
+        <thead>
+          <tr>
+            <th *ngFor="let col of getColumns(cotacoes)">{{ col }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of cotacoes">
+            <td *ngFor="let col of getColumns(cotacoes)">{{ row[col] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="cotacoes.length === 0">Nenhum dado encontrado.</div>
+    </section>
+    <section *ngIf="activeTab === 3">
+      <h2>Operações</h2>
+      <table *ngIf="operacoes.length > 0" class="data-grid">
+        <thead>
+          <tr>
+            <th *ngFor="let col of getColumns(operacoes)">{{ col }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of operacoes">
+            <td *ngFor="let col of getColumns(operacoes)">{{ row[col] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="operacoes.length === 0">Nenhum dado encontrado.</div>
+    </section>
+    <section *ngIf="activeTab === 4">
+      <h2>Posições</h2>
+      <table *ngIf="posicoes.length > 0" class="data-grid">
+        <thead>
+          <tr>
+            <th *ngFor="let col of getColumns(posicoes)">{{ col }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of posicoes">
+            <td *ngFor="let col of getColumns(posicoes)">{{ row[col] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="posicoes.length === 0">Nenhum dado encontrado.</div>
+    </section>
+    <section *ngIf="activeTab === 5">
+      <h2>Usuários</h2>
+      <table *ngIf="usuarios.length > 0" class="data-grid">
+        <thead>
+          <tr>
+            <th *ngFor="let col of getColumns(usuarios)">{{ col }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of usuarios">
+            <td *ngFor="let col of getColumns(usuarios)">{{ row[col] }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="usuarios.length === 0">Nenhum dado encontrado.</div>
+    </section>
+  </div>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
