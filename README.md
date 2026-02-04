@@ -1,5 +1,5 @@
 
-# TesteBancárioFront - Documentação Técnica
+# TesteItauFront - Documentação Técnica
 
 ## Visão Geral
 
@@ -8,7 +8,7 @@ TesteBancárioFront é uma aplicação Angular standalone que serve como front-e
 ## Estrutura do Projeto
 
 ```
-TesteBancárioFront/
+TesteItauFront/
 ├── Angular.json
 ├── package.json
 ├── tsconfig*.json
