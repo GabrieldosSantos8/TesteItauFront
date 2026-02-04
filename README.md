@@ -1,15 +1,15 @@
 
-# TesteItauFront - Documentação Técnica
+# TesteBancárioFront - Documentação Técnica
 
 ## Visão Geral
 
-TesteItauFront é uma aplicação Angular standalone que serve como front-end para uma API de investimentos. Ela permite consultar, visualizar e analisar dados de Ativos, Cotações, Operações, Posições e Usuários, além de realizar consultas específicas como última cotação, preço médio, posição de cliente, financeiro da corretora e rankings Top 10.
+TesteBancárioFront é uma aplicação Angular standalone que serve como front-end para uma API de investimentos. Ela permite consultar, visualizar e analisar dados de Ativos, Cotações, Operações, Posições e Usuários, além de realizar consultas específicas como última cotação, preço médio, posição de cliente, financeiro da corretora e rankings Top 10.
 
 ## Estrutura do Projeto
 
 ```
-TesteItauFront/
-├── angular.json
+TesteBancárioFront/
+├── Angular.json
 ├── package.json
 ├── tsconfig*.json
 ├── public/
@@ -97,8 +97,8 @@ npx ng test
 ## Dependências Principais
 
 - Angular
-- @angular/forms
-- @angular/common/http
+- @Angular/forms
+- @Angular/common/http
 
 ---
 
