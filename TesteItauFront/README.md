@@ -1,4 +1,4 @@
-# TesteItauFront
+# Teste Front
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
@@ -58,7 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-# TesteItauFront - Documentação Técnica
+# TesteBancárioFront - Documentação Técnica
 
 ## Visão Geral
 
@@ -67,7 +67,7 @@ TesteItauFront é uma aplicação Angular standalone que serve como front-end pa
 ## Estrutura do Projeto
 
 ```
-TesteItauFront/
+TesteBancárioFront/
 ├── angular.json
 ├── package.json
 ├── tsconfig*.json
