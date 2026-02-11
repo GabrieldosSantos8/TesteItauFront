@@ -1,0 +1,37 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# VS Code
+.vscode/
+
+# Environment secrets
+appsettings.Development.json
+.env
+
+# Logs
+*.log
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+
+# Editor settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
