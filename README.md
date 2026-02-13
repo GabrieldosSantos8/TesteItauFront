@@ -1,5 +1,8 @@
 # TesteBancario_Front
+# 📊 Teste Itau - Painel de Ativos (Frontend)
 
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 Este projeto foi gerado usando o [Angular CLI](https://github.com/angular/angular-cli) versão 20.0.1.
 
 ## Servidor de desenvolvimento
@@ -157,4 +160,8 @@ npx ng test
 
 ---
 
+´´´´
+. **Clonar o Repositório:**
+   ```bash
+   git clone [https://github.com/GabrieldosSantos8/TesteItau_Front.git](https://github.com/GabrieldosSantos8/TesteItau_Front.git)
 
