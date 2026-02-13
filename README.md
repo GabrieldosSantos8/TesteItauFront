@@ -161,6 +161,8 @@ npx ng test
 ---
 
 ´´´´
+
+```
 . **Clonar o Repositório:**
    ```bash
    git clone [https://github.com/GabrieldosSantos8/TesteItau_Front.git](https://github.com/GabrieldosSantos8/TesteItau_Front.git)
